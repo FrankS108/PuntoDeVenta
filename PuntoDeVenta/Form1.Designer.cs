@@ -195,6 +195,7 @@ namespace PuntoDeVenta
             // siticoneButton1
             // 
             this.siticoneButton1.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
+            this.siticoneButton1.Checked = true;
             this.siticoneButton1.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.siticoneButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.siticoneButton1.CheckedState.ForeColor = System.Drawing.Color.White;
@@ -242,6 +243,7 @@ namespace PuntoDeVenta
             // viewShop
             // 
             this.viewShop.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
+            this.viewShop.Checked = true;
             this.viewShop.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.viewShop.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.viewShop.CheckedState.ForeColor = System.Drawing.Color.White;
