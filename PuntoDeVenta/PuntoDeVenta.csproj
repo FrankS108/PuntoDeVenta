@@ -77,6 +77,18 @@
     <Compile Include="UserControls\PanelShop.Designer.cs">
       <DependentUpon>PanelShop.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\WindowProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WindowProducts.Designer.cs">
+      <DependentUpon>WindowProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WindowShop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WindowShop.Designer.cs">
+      <DependentUpon>WindowShop.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PanelShop.resx">
       <DependentUpon>PanelShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WindowProducts.resx">
+      <DependentUpon>WindowProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WindowShop.resx">
+      <DependentUpon>WindowShop.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

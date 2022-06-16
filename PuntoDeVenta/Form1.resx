@@ -531,7 +531,7 @@
         95hpV59DP1f1OXVBr74G81oc//SootrNazSvla/pCcl6Wlr+P40VbjdV/mJfAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="siticoneButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonConfiguration.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
         DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKOWlDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
@@ -761,7 +761,7 @@
         JEwqgUIJVQJ10lDdeuutd/p/VZTVubZud/MAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="siticoneButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonProducts.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAACB
         RgAAgUYBW9GHpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAFrhSURBVHhe7d0H
@@ -1155,7 +1155,7 @@
         C4W+2BCvOkhEyDGxSSwWH4s+4lXxsLhO/EGch2YP2Ux94f8D7KSids40QeAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="siticoneButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonShop.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA6QAAASOCAYAAADSL+EDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         nQdAFVfav8+mKKBi15jeN8mml03vbZPt/dtvy7fZ3fx3N01RuJcu0otdo4nRJCbR2EAEQQFFUOy90dvl

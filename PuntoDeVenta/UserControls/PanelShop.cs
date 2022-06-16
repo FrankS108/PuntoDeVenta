@@ -15,6 +15,15 @@ namespace PuntoDeVenta.UserControls
         public PanelShop()
         {
             InitializeComponent();
+
+            //Cambia la fuente del texto por una nueva *No quiere cambiar desde el controlador*
+            dollarText.Font = new Font(dollarText.Font.Name, 22, dollarText.Font.Style, dollarText.Font.Unit);
+            textTotal.Font = new Font(textTotal.Font.Name, 16, textTotal.Font.Style, textTotal.Font.Unit);
+        }
+
+        private void dollarText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

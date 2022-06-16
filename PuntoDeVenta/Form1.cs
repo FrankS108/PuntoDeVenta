@@ -16,44 +16,49 @@ namespace PuntoDeVenta
         public VentanaPrincipal()
         {
             InitializeComponent();
-            AddPanelsShop();
+            AddWindows();
         }
 
-        private void viewShop_Click(object sender, EventArgs e)
+        private void siticonePanel1_Paint(object sender, PaintEventArgs e)
         {
-            Console.WriteLine(viewShop.Name);
-            SelectOptionShop(viewShop.Name);
+
         }
 
-        private void searchShop_Click(object sender, EventArgs e)
+        private void buttonShop_Click(object sender, EventArgs e)
         {
-            SelectOptionShop(viewSearch.Name);
+            SelectMenu(buttonShop.Name);
         }
 
-        private void viewOffers_Click(object sender, EventArgs e)
+        private void buttonProducts_Click(object sender, EventArgs e)
         {
-            SelectOptionShop(viewOffers.Name);
+            SelectMenu(buttonProducts.Name);
         }
 
-        private void AddPanelsShop()
+        private void buttonConfiguration_Click(object sender, EventArgs e)
         {
-            PanelMain.Controls.Add(new PanelShop());
-            PanelMain.Controls.Add(new PanelSearch());
-            PanelMain.Controls.Add(new PanelOfertas());
+            SelectMenu(buttonConfiguration.Name);
         }
 
-        private void SelectOptionShop(string uiSelected)
+        //Funciones Principales
+        private void AddWindows()
+        {
+            WindowController.Controls.Add(new WindowShop());
+            WindowController.Controls.Add(new WindowProducts());
+        }
+
+        //Botones de la izquierda
+        private void SelectMenu(string uiSelected)
         {
             switch (uiSelected)
             {
-                case "viewShop":
-                    PanelMain.Controls.Find("PanelShop", false)[0].BringToFront();
+                case "buttonShop":
+                    WindowController.Controls.Find("WindowShop", false)[0].BringToFront();
                     break;
-                case "viewSearch":
-                    PanelMain.Controls.Find("PanelSearch", false)[0].BringToFront();
+                case "buttonProducts":
+                    WindowController.Controls.Find("WindowProducts", false)[0].BringToFront();
                     break;
-                case "viewOffers":
-                    PanelMain.Controls.Find("PanelOfertas", false)[0].BringToFront();
+                case "buttonConfiguration":
+                    WindowController.Controls.Find("WindowShop", false)[0].BringToFront();
                     break;
             }
         }

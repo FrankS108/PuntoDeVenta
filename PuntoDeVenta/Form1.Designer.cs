@@ -35,19 +35,14 @@ namespace PuntoDeVenta
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.siticoneButton6 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
+            this.buttonConfiguration = new Siticone.UI.WinForms.SiticoneButton();
+            this.buttonProducts = new Siticone.UI.WinForms.SiticoneButton();
+            this.buttonShop = new Siticone.UI.WinForms.SiticoneButton();
             this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
-            this.PanelMain = new Siticone.UI.WinForms.SiticonePanel();
-            this.viewShop = new Siticone.UI.WinForms.SiticoneButton();
-            this.viewSearch = new Siticone.UI.WinForms.SiticoneButton();
-            this.viewOffers = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticonePanel3 = new Siticone.UI.WinForms.SiticonePanel();
+            this.WindowController = new Siticone.UI.WinForms.SiticonePanel();
             this.siticonePanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.siticonePanel1.SuspendLayout();
-            this.siticonePanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticonePanel2
@@ -103,9 +98,9 @@ namespace PuntoDeVenta
             // panel1
             // 
             this.panel1.Controls.Add(this.siticoneButton6);
-            this.panel1.Controls.Add(this.siticoneButton3);
-            this.panel1.Controls.Add(this.siticoneButton2);
-            this.panel1.Controls.Add(this.siticoneButton1);
+            this.panel1.Controls.Add(this.buttonConfiguration);
+            this.panel1.Controls.Add(this.buttonProducts);
+            this.panel1.Controls.Add(this.buttonShop);
             this.panel1.Location = new System.Drawing.Point(0, 116);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(279, 532);
@@ -138,87 +133,90 @@ namespace PuntoDeVenta
             this.siticoneButton6.Text = "Salir";
             this.siticoneButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // siticoneButton3
+            // buttonConfiguration
             // 
-            this.siticoneButton3.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.siticoneButton3.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.siticoneButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.siticoneButton3.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
-            this.siticoneButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
-            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Image = ((System.Drawing.Image)(resources.GetObject("siticoneButton3.Image")));
-            this.siticoneButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.siticoneButton3.ImageSize = new System.Drawing.Size(40, 40);
-            this.siticoneButton3.Location = new System.Drawing.Point(0, 192);
-            this.siticoneButton3.Name = "siticoneButton3";
-            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
-            this.siticoneButton3.Size = new System.Drawing.Size(279, 96);
-            this.siticoneButton3.TabIndex = 6;
-            this.siticoneButton3.Text = "Configuración";
-            this.siticoneButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonConfiguration.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonConfiguration.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.buttonConfiguration.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.buttonConfiguration.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.buttonConfiguration.CheckedState.Parent = this.buttonConfiguration;
+            this.buttonConfiguration.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonConfiguration.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.buttonConfiguration.CustomImages.Parent = this.buttonConfiguration;
+            this.buttonConfiguration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonConfiguration.FillColor = System.Drawing.Color.Transparent;
+            this.buttonConfiguration.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConfiguration.ForeColor = System.Drawing.Color.White;
+            this.buttonConfiguration.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            this.buttonConfiguration.HoveredState.Parent = this.buttonConfiguration;
+            this.buttonConfiguration.Image = ((System.Drawing.Image)(resources.GetObject("buttonConfiguration.Image")));
+            this.buttonConfiguration.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonConfiguration.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonConfiguration.Location = new System.Drawing.Point(0, 192);
+            this.buttonConfiguration.Name = "buttonConfiguration";
+            this.buttonConfiguration.ShadowDecoration.Parent = this.buttonConfiguration;
+            this.buttonConfiguration.Size = new System.Drawing.Size(279, 96);
+            this.buttonConfiguration.TabIndex = 6;
+            this.buttonConfiguration.Text = "Configuración";
+            this.buttonConfiguration.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonConfiguration.Click += new System.EventHandler(this.buttonConfiguration_Click);
             // 
-            // siticoneButton2
+            // buttonProducts
             // 
-            this.siticoneButton2.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.siticoneButton2.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.siticoneButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.siticoneButton2.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
-            this.siticoneButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticoneButton2.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
-            this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Image = ((System.Drawing.Image)(resources.GetObject("siticoneButton2.Image")));
-            this.siticoneButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.siticoneButton2.ImageSize = new System.Drawing.Size(30, 30);
-            this.siticoneButton2.Location = new System.Drawing.Point(0, 96);
-            this.siticoneButton2.Name = "siticoneButton2";
-            this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
-            this.siticoneButton2.Size = new System.Drawing.Size(279, 96);
-            this.siticoneButton2.TabIndex = 5;
-            this.siticoneButton2.Text = "Productos";
-            this.siticoneButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonProducts.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonProducts.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.buttonProducts.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.buttonProducts.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.buttonProducts.CheckedState.Parent = this.buttonProducts;
+            this.buttonProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonProducts.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.buttonProducts.CustomImages.Parent = this.buttonProducts;
+            this.buttonProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonProducts.FillColor = System.Drawing.Color.Transparent;
+            this.buttonProducts.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProducts.ForeColor = System.Drawing.Color.White;
+            this.buttonProducts.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            this.buttonProducts.HoveredState.Parent = this.buttonProducts;
+            this.buttonProducts.Image = ((System.Drawing.Image)(resources.GetObject("buttonProducts.Image")));
+            this.buttonProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonProducts.ImageSize = new System.Drawing.Size(30, 30);
+            this.buttonProducts.Location = new System.Drawing.Point(0, 96);
+            this.buttonProducts.Name = "buttonProducts";
+            this.buttonProducts.ShadowDecoration.Parent = this.buttonProducts;
+            this.buttonProducts.Size = new System.Drawing.Size(279, 96);
+            this.buttonProducts.TabIndex = 5;
+            this.buttonProducts.Text = "Productos";
+            this.buttonProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonProducts.Click += new System.EventHandler(this.buttonProducts_Click);
             // 
-            // siticoneButton1
+            // buttonShop
             // 
-            this.siticoneButton1.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.siticoneButton1.Checked = true;
-            this.siticoneButton1.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.siticoneButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.siticoneButton1.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.CheckedState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.siticoneButton1.CustomImages.Parent = this.siticoneButton1;
-            this.siticoneButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticoneButton1.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
-            this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Image = ((System.Drawing.Image)(resources.GetObject("siticoneButton1.Image")));
-            this.siticoneButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.siticoneButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.siticoneButton1.Location = new System.Drawing.Point(0, 0);
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
-            this.siticoneButton1.Size = new System.Drawing.Size(279, 96);
-            this.siticoneButton1.TabIndex = 3;
-            this.siticoneButton1.Text = "Tienda";
-            this.siticoneButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonShop.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonShop.Checked = true;
+            this.buttonShop.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.buttonShop.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.buttonShop.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.buttonShop.CheckedState.Parent = this.buttonShop;
+            this.buttonShop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonShop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.buttonShop.CustomImages.Parent = this.buttonShop;
+            this.buttonShop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonShop.FillColor = System.Drawing.Color.Transparent;
+            this.buttonShop.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonShop.ForeColor = System.Drawing.Color.White;
+            this.buttonShop.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            this.buttonShop.HoveredState.Parent = this.buttonShop;
+            this.buttonShop.Image = ((System.Drawing.Image)(resources.GetObject("buttonShop.Image")));
+            this.buttonShop.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonShop.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonShop.Location = new System.Drawing.Point(0, 0);
+            this.buttonShop.Name = "buttonShop";
+            this.buttonShop.ShadowDecoration.Parent = this.buttonShop;
+            this.buttonShop.Size = new System.Drawing.Size(279, 96);
+            this.buttonShop.TabIndex = 3;
+            this.buttonShop.Text = "Tienda";
+            this.buttonShop.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonShop.Click += new System.EventHandler(this.buttonShop_Click);
             // 
             // siticonePanel1
             // 
@@ -230,97 +228,16 @@ namespace PuntoDeVenta
             this.siticonePanel1.ShadowDecoration.Parent = this.siticonePanel1;
             this.siticonePanel1.Size = new System.Drawing.Size(279, 648);
             this.siticonePanel1.TabIndex = 0;
+            this.siticonePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticonePanel1_Paint);
             // 
-            // PanelMain
+            // WindowController
             // 
-            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelMain.Location = new System.Drawing.Point(279, 93);
-            this.PanelMain.Name = "PanelMain";
-            this.PanelMain.ShadowDecoration.Parent = this.PanelMain;
-            this.PanelMain.Size = new System.Drawing.Size(1002, 555);
-            this.PanelMain.TabIndex = 3;
-            // 
-            // viewShop
-            // 
-            this.viewShop.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.viewShop.Checked = true;
-            this.viewShop.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.viewShop.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.viewShop.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.viewShop.CheckedState.Parent = this.viewShop;
-            this.viewShop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewShop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.viewShop.CustomImages.Parent = this.viewShop;
-            this.viewShop.FillColor = System.Drawing.Color.Transparent;
-            this.viewShop.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewShop.ForeColor = System.Drawing.Color.Black;
-            this.viewShop.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.viewShop.HoveredState.Parent = this.viewShop;
-            this.viewShop.Location = new System.Drawing.Point(0, 0);
-            this.viewShop.Name = "viewShop";
-            this.viewShop.ShadowDecoration.Parent = this.viewShop;
-            this.viewShop.Size = new System.Drawing.Size(196, 58);
-            this.viewShop.TabIndex = 0;
-            this.viewShop.Text = "Tienda";
-            this.viewShop.Click += new System.EventHandler(this.viewShop_Click);
-            // 
-            // viewSearch
-            // 
-            this.viewSearch.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.viewSearch.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.viewSearch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.viewSearch.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.viewSearch.CheckedState.Parent = this.viewSearch;
-            this.viewSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewSearch.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.viewSearch.CustomImages.Parent = this.viewSearch;
-            this.viewSearch.FillColor = System.Drawing.Color.Transparent;
-            this.viewSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewSearch.ForeColor = System.Drawing.Color.Black;
-            this.viewSearch.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.viewSearch.HoveredState.Parent = this.viewSearch;
-            this.viewSearch.Location = new System.Drawing.Point(196, 0);
-            this.viewSearch.Name = "viewSearch";
-            this.viewSearch.ShadowDecoration.Parent = this.viewSearch;
-            this.viewSearch.Size = new System.Drawing.Size(196, 58);
-            this.viewSearch.TabIndex = 1;
-            this.viewSearch.Text = "Buscar";
-            this.viewSearch.Click += new System.EventHandler(this.searchShop_Click);
-            // 
-            // viewOffers
-            // 
-            this.viewOffers.ButtonMode = Siticone.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.viewOffers.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.viewOffers.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.viewOffers.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.viewOffers.CheckedState.Parent = this.viewOffers;
-            this.viewOffers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewOffers.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.viewOffers.CustomImages.Parent = this.viewOffers;
-            this.viewOffers.FillColor = System.Drawing.Color.Transparent;
-            this.viewOffers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewOffers.ForeColor = System.Drawing.Color.Black;
-            this.viewOffers.HoveredState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.viewOffers.HoveredState.Parent = this.viewOffers;
-            this.viewOffers.Location = new System.Drawing.Point(392, 0);
-            this.viewOffers.Name = "viewOffers";
-            this.viewOffers.ShadowDecoration.Parent = this.viewOffers;
-            this.viewOffers.Size = new System.Drawing.Size(196, 58);
-            this.viewOffers.TabIndex = 2;
-            this.viewOffers.Text = "Ofertas";
-            this.viewOffers.Click += new System.EventHandler(this.viewOffers_Click);
-            // 
-            // siticonePanel3
-            // 
-            this.siticonePanel3.Controls.Add(this.viewOffers);
-            this.siticonePanel3.Controls.Add(this.viewSearch);
-            this.siticonePanel3.Controls.Add(this.viewShop);
-            this.siticonePanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticonePanel3.Location = new System.Drawing.Point(279, 35);
-            this.siticonePanel3.Name = "siticonePanel3";
-            this.siticonePanel3.ShadowDecoration.Parent = this.siticonePanel3;
-            this.siticonePanel3.Size = new System.Drawing.Size(1002, 58);
-            this.siticonePanel3.TabIndex = 2;
+            this.WindowController.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WindowController.Location = new System.Drawing.Point(279, 35);
+            this.WindowController.Name = "WindowController";
+            this.WindowController.ShadowDecoration.Parent = this.WindowController;
+            this.WindowController.Size = new System.Drawing.Size(1002, 613);
+            this.WindowController.TabIndex = 2;
             // 
             // VentanaPrincipal
             // 
@@ -328,8 +245,7 @@ namespace PuntoDeVenta
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1281, 648);
-            this.Controls.Add(this.PanelMain);
-            this.Controls.Add(this.siticonePanel3);
+            this.Controls.Add(this.WindowController);
             this.Controls.Add(this.siticonePanel2);
             this.Controls.Add(this.siticonePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -339,7 +255,6 @@ namespace PuntoDeVenta
             this.siticonePanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.siticonePanel1.ResumeLayout(false);
-            this.siticonePanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -348,17 +263,13 @@ namespace PuntoDeVenta
         private Siticone.UI.WinForms.SiticonePanel siticonePanel2;
         private System.Windows.Forms.Panel panel1;
         private Siticone.UI.WinForms.SiticonePanel siticonePanel1;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton3;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
+        private Siticone.UI.WinForms.SiticoneButton buttonShop;
+        private Siticone.UI.WinForms.SiticoneButton buttonConfiguration;
+        private Siticone.UI.WinForms.SiticoneButton buttonProducts;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton5;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton6;
-        private Siticone.UI.WinForms.SiticonePanel PanelMain;
-        private Siticone.UI.WinForms.SiticoneButton viewShop;
-        private Siticone.UI.WinForms.SiticoneButton viewSearch;
-        private Siticone.UI.WinForms.SiticoneButton viewOffers;
-        private Siticone.UI.WinForms.SiticonePanel siticonePanel3;
+        private Siticone.UI.WinForms.SiticonePanel WindowController;
     }
 }
 
