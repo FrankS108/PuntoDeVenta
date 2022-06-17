@@ -59,6 +59,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\PanelConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PanelConfiguration.Designer.cs">
+      <DependentUpon>PanelConfiguration.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\PanelOfertas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="UserControls\PanelShop.Designer.cs">
       <DependentUpon>PanelShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WindowConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WindowConfiguration.Designer.cs">
+      <DependentUpon>WindowConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\WindowProducts.cs">
       <SubType>UserControl</SubType>
@@ -97,6 +109,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PanelConfiguration.resx">
+      <DependentUpon>PanelConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PanelOfertas.resx">
       <DependentUpon>PanelOfertas.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PanelShop.resx">
       <DependentUpon>PanelShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WindowConfiguration.resx">
+      <DependentUpon>WindowConfiguration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\WindowProducts.resx">
       <DependentUpon>WindowProducts.cs</DependentUpon>

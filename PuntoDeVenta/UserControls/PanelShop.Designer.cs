@@ -30,9 +30,9 @@ namespace PuntoDeVenta.UserControls
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dollarsLabel = new Siticone.UI.WinForms.SiticoneLabel();
             this.PanelContent = new Siticone.UI.WinForms.SiticonePanel();
             this.PanelSubContent = new Siticone.UI.WinForms.SiticonePanel();
@@ -46,6 +46,7 @@ namespace PuntoDeVenta.UserControls
             this.label2 = new System.Windows.Forms.Label();
             this.payButton = new Siticone.UI.WinForms.SiticoneButton();
             this.siticonePanel2 = new Siticone.UI.WinForms.SiticonePanel();
+            this.dollarText = new Siticone.UI.WinForms.SiticoneTextBox();
             this.siticoneLabel1 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneCheckBox4 = new Siticone.UI.WinForms.SiticoneCheckBox();
             this.siticoneCheckBox3 = new Siticone.UI.WinForms.SiticoneCheckBox();
@@ -53,7 +54,6 @@ namespace PuntoDeVenta.UserControls
             this.siticoneCheckBox1 = new Siticone.UI.WinForms.SiticoneCheckBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dollarText = new Siticone.UI.WinForms.SiticoneTextBox();
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.PanelContent.SuspendLayout();
             this.PanelSubContent.SuspendLayout();
@@ -96,35 +96,35 @@ namespace PuntoDeVenta.UserControls
             // 
             // DataShop
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DataShop.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DataShop.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataShop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataShop.BackgroundColor = System.Drawing.Color.White;
             this.DataShop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataShop.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataShop.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataShop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataShop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataShop.ColumnHeadersHeight = 40;
             this.DataShop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.name,
             this.count,
             this.price});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataShop.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataShop.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataShop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataShop.EnableHeadersVisualStyles = false;
             this.DataShop.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -225,6 +225,7 @@ namespace PuntoDeVenta.UserControls
             this.textTotal.Size = new System.Drawing.Size(197, 36);
             this.textTotal.TabIndex = 2;
             this.textTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textTotal.TextChanged += new System.EventHandler(this.textTotal_TextChanged);
             // 
             // label2
             // 
@@ -267,6 +268,32 @@ namespace PuntoDeVenta.UserControls
             this.siticonePanel2.ShadowDecoration.Parent = this.siticonePanel2;
             this.siticonePanel2.Size = new System.Drawing.Size(196, 555);
             this.siticonePanel2.TabIndex = 8;
+            // 
+            // dollarText
+            // 
+            this.dollarText.BorderRadius = 20;
+            this.dollarText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.dollarText.DefaultText = "0";
+            this.dollarText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.dollarText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.dollarText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.dollarText.DisabledState.Parent = this.dollarText;
+            this.dollarText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.dollarText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.dollarText.FocusedState.Parent = this.dollarText;
+            this.dollarText.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.dollarText.HoveredState.Parent = this.dollarText;
+            this.dollarText.Location = new System.Drawing.Point(13, 76);
+            this.dollarText.Name = "dollarText";
+            this.dollarText.PasswordChar = '\0';
+            this.dollarText.PlaceholderText = "";
+            this.dollarText.ReadOnly = true;
+            this.dollarText.SelectedText = "";
+            this.dollarText.ShadowDecoration.Parent = this.dollarText;
+            this.dollarText.Size = new System.Drawing.Size(162, 52);
+            this.dollarText.TabIndex = 6;
+            this.dollarText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dollarText.TextChanged += new System.EventHandler(this.dollarText_TextChanged);
             // 
             // siticoneLabel1
             // 
@@ -368,31 +395,6 @@ namespace PuntoDeVenta.UserControls
             // 
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
-            // 
-            // dollarText
-            // 
-            this.dollarText.BorderRadius = 20;
-            this.dollarText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dollarText.DefaultText = "0";
-            this.dollarText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.dollarText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.dollarText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.dollarText.DisabledState.Parent = this.dollarText;
-            this.dollarText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.dollarText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.dollarText.FocusedState.Parent = this.dollarText;
-            this.dollarText.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.dollarText.HoveredState.Parent = this.dollarText;
-            this.dollarText.Location = new System.Drawing.Point(13, 76);
-            this.dollarText.Name = "dollarText";
-            this.dollarText.PasswordChar = '\0';
-            this.dollarText.PlaceholderText = "";
-            this.dollarText.SelectedText = "";
-            this.dollarText.ShadowDecoration.Parent = this.dollarText;
-            this.dollarText.Size = new System.Drawing.Size(162, 52);
-            this.dollarText.TabIndex = 6;
-            this.dollarText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dollarText.TextChanged += new System.EventHandler(this.dollarText_TextChanged);
             // 
             // contextMenuStrip3
             // 

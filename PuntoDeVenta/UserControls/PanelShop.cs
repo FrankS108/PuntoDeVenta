@@ -25,5 +25,15 @@ namespace PuntoDeVenta.UserControls
         {
 
         }
+
+        private void textTotal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void SetDollar(float dollar)
+        {
+            dollarText.Text = dollar.ToString();
+        }
     }
 }

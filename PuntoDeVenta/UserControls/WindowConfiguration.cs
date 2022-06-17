@@ -10,42 +10,26 @@ using System.Windows.Forms;
 
 namespace PuntoDeVenta.UserControls
 {
-    public partial class WindowShop : UserControl
+    public partial class WindowConfiguration : UserControl
     {
-
-        private PanelShop panelShop = new PanelShop();
-
-        public WindowShop()
+        private PanelConfiguration panelConfiguration;
+        private VentanaPrincipal ventanaPrincipal;
+        public WindowConfiguration(VentanaPrincipal _ventanaPrincipal)
         {
             InitializeComponent();
+            ventanaPrincipal = _ventanaPrincipal;
+            panelConfiguration = new PanelConfiguration(ventanaPrincipal);
             AddWindows();
         }
 
-        private void WindowShop_Load(object sender, EventArgs e)
+        private void viewConfiguration_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void viewShop_Click(object sender, EventArgs e)
-        {
-            SelectWindow(viewShop.Name);
-        }
-
-        private void viewSearch_Click(object sender, EventArgs e)
-        {
-            SelectWindow(viewSearch.Name);
-        }
-
-        private void viewOffers_Click(object sender, EventArgs e)
-        {
-            SelectWindow(viewOffers.Name);
+            SelectWindow(viewConfiguration.Name);
         }
 
         private void AddWindows()
         {
-            PanelMain.Controls.Add(panelShop);
-            PanelMain.Controls.Add(new PanelSearch());
-            PanelMain.Controls.Add(new PanelOfertas());
+            PanelMain.Controls.Add(panelConfiguration);
         }
 
         private void SelectWindow(string uiSelected)
@@ -64,9 +48,6 @@ namespace PuntoDeVenta.UserControls
             }
         }
 
-        public void SetDollarWindowShop(float dollar)
-        {
-            panelShop.SetDollar(dollar);
-        }
+
     }
 }

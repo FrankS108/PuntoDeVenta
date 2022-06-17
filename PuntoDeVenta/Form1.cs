@@ -13,9 +13,17 @@ namespace PuntoDeVenta
 {
     public partial class VentanaPrincipal : Form
     {
+        private WindowShop windowShop;
+        private WindowProducts windowProducts;
+        private WindowConfiguration windowConfiguration;
+        private PanelShop panelShop;
+
         public VentanaPrincipal()
         {
             InitializeComponent();
+            windowShop = new WindowShop();
+            windowProducts = new WindowProducts();
+            windowConfiguration = new WindowConfiguration(this);
             AddWindows();
         }
 
@@ -42,8 +50,9 @@ namespace PuntoDeVenta
         //Funciones Principales
         private void AddWindows()
         {
-            WindowController.Controls.Add(new WindowShop());
-            WindowController.Controls.Add(new WindowProducts());
+            WindowController.Controls.Add(windowShop);
+            WindowController.Controls.Add(windowProducts);
+            WindowController.Controls.Add(windowConfiguration);
         }
 
         //Botones de la izquierda
@@ -52,15 +61,20 @@ namespace PuntoDeVenta
             switch (uiSelected)
             {
                 case "buttonShop":
-                    WindowController.Controls.Find("WindowShop", false)[0].BringToFront();
+                    WindowController.Controls.Find("windowShop", false)[0].BringToFront();
                     break;
                 case "buttonProducts":
-                    WindowController.Controls.Find("WindowProducts", false)[0].BringToFront();
+                    WindowController.Controls.Find("windowProducts", false)[0].BringToFront();
                     break;
                 case "buttonConfiguration":
-                    WindowController.Controls.Find("WindowShop", false)[0].BringToFront();
+                    WindowController.Controls.Find("windowConfiguration", false)[0].BringToFront();
                     break;
             }
+        }
+
+        public void SetDollar(float dollar)
+        {
+            windowShop.SetDollarWindowShop(dollar);
         }
     }
 }
